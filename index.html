@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mountain</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      }
+      .section-1 {
+        background-image: url("images/header.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 900px;
+      }
+      header {
+        width: 100%;
+        min-width: 532px;
+        height: 90px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        /*position: fixed;
+        top: 0px;*/
+      }
+      header h1 {
+        float: left;
+        margin: 24px 0px 12px 12px;
+      }
+      header h1, h1 span {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 32px;
+      }
+      nav {
+        float: right;
+        margin: 36px 12px 0px 12px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: inline;
+        margin-right: 20px;
+      }
+      li a {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      a {
+        text-decoration: none;
+      }
+      li a:hover {
+        color: white;
+      }
+      .banner {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 262px;
+        min-width: 600px;
+      }
+      .banner h1 {
+        font-size: 80px;
+      }
+      .banner p {
+        margin-top: 20px;
+      }
+      .banner a {
+        display: inline-block;
+        margin-top: 50px;
+        font-size: 24px;
+        background-color: #94cc33;
+        padding: 16px 22px;
+        border-radius: 40px;
+      }
+      .banner a:hover , .banner-3 a:hover, .banner-5 a:hover{
+        background-color: #00e600;
+      }
+      .section-2 {
+        position: relative;
+        bottom: 47px;
+        width: 100%;
+        height: 250px;
+        background-color: #94cc33;
+        min-width: 473px;
+      }
+      .banner-2 {
+        text-align: center;
+        height: 250px;
+      }
+      .banner-2 span {
+        margin-top: 45px;
+      }
+      .banner-2 h2 {
+        margin-top: 5px;
+      }
+      .banner-2 p {
+        margin-top: 15px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .section-3{
+        height: 500px;
+        width: 100%;
+        min-width: 1010px;
+        position: relative;
+        bottom: 47px;
+        background-color: white;
+      }
+      .microphone, .iphone {
+        border-radius: 75%;
+        height: 350px;
+        margin: 75px 25px;
+      }
+      .banner-3 {
+        width: 40%;
+        margin-top: 110px;
+        margin-left: 20px;
+      }
+      .banner-3 h2, .banner-4 h2 {
+        margin-top: 10px;
+        color: #262626;
+      }
+      .banner-3 p, .banner-4 p {
+        margin-top: 10px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      .microphone, .banner-3 {
+        float: left;
+      }
+      .banner-3 a, .banner-5 a {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 24px;
+        background-color: #94cc33;
+        padding: 16px 22px;
+        border-radius: 40px;
+      }
+      .section-4 {
+        height: 500px;
+        width: 100%;
+        background-color: #262626;
+        position: relative;
+        bottom: 47px;
+        min-width: 1010px;
+      }
+      .iphone, .banner-4 {
+        float: right;
+      }
+      .banner-4 {
+        width: 40%;
+        margin-top: 110px;
+        margin-right: 20px;
+      }
+      .banner-4 a {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 24px;
+        background-color: white;
+        padding: 16px 22px;
+        border-radius: 40px;
+        color: #262626;
+      }
+      .banner-4 h2 {
+        margin-top: 10px;
+        color: white;
+      }
+      .banner-4 p {
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .banner-4 a:hover {
+        background-color: #262626;
+        color: white;
+      }
+      .section-5 {
+        width: 100%;
+        height: 250px;
+        position: relative;
+        bottom: 47px;
+        min-width: 1041px;
+      }
+      .img-1, .img-2, .img-3 {
+        float: left;
+        height: 250px;
+        width: 33.333333333333%;
+      }
+      .img-1 {
+        background-image: url("images/writing.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .img-2 {
+        background-image: url("images/concert.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .img-3 {
+        background-image: url("images/pencil_sharpener.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .section-5 h3 {
+        font-size: 48px;
+        text-align: center;
+        margin-top: 101px;
+        text-shadow: 0 0 10px #262626;
+      }
+      .section-6 {
+        position: relative;
+        bottom: 47px;
+        width: 100%;
+        min-width: 778px;
+        height: 320px;
+      }
+      .banner-5 {
+        text-align: center;
+        height: 250px;
+      }
+      .banner-5 span {
+        margin-top: 30px;
+        color: #94cc33;
+      }
+      .banner-5 h2 {
+        margin-top: 5px;
+        font-size: 32px;
+        color: #262626;
+      }
+      .banner-5 p {
+        margin-top: 15px;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.5);
+        padding: 0px 75px;
+      }
+      .section-7 {
+        position: relative;
+        bottom: 47px;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .banner-6 {
+        width: 100%;
+        height: 300px;
+        background-color: #94cc33;
+        padding-top: 100px;
+      }
+      .banner-6 span {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #copy {
+        margin-top: 40px;
+        color: #262626;
+      }
+      @media only screen and (max-width: 400px) {
+        li {
+        }
+        header {
+        }
+        nav {
+          clear: left;
+        }
+        header h1 {
+
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-1">
+      <header>
+        <h1><span class="	fa fa-modx">&nbsp;</span>Design</h1>
+        <nav>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Purchase</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <article class="banner">
+        <h1>Dramatically Engage</h1>
+        <p>Objectively innovate empowered manufactured products whereas parallel platforms.</p>
+        <a href="#">Engage Now</a>
+      </article>
+    </section>
+
+    <section class="section-2">
+      <article class="banner-2">
+        <span class="fa fa-handshake-o fa-4x"></span>
+        <h2>Completely synergize resource taxing relationships</h2>
+        <p>Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+      </article>
+    </section>
+
+    <section class="section-3">
+      <img class="microphone" src="images/microphone.jpg"/>
+      <article class="banner-3">
+        <h2>Best in Class</h2>
+        <p>Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+        <a href="#">Classify It</a>
+      </article>
+    </section>
+
+    <section class="section-4">
+      <img class="iphone" src="images/iphone.jpg"/>
+      <article class="banner-4">
+        <h2>Superior Class</h2>
+        <p>Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+        <a href="#">Test It</a>
+      </article>
+    </section>
+
+    <section class="section-5">
+      <a href="">
+        <article class="img-1">
+          <h3>Unleash</h3>
+        </article>
+      </a>
+      <a href="">
+        <article class="img-2">
+          <h3>Synergize</h3>
+        </article>
+      </a>
+      <a href="">
+        <article class="img-3">
+          <h3>Procrastinate</h3>
+        </article>
+      </a>
+    </section>
+
+    <section class="section-6">
+      <article class="banner-5">
+        <span class="fa fa-legal fa-3x"></span>
+        <h2>Sanity Check</h2>
+        <p>Holisticly predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
+        <a href="#">Check Now</a>
+      </article>
+    </section>
+
+    <footer class="section-7">
+      <article class="banner-6">
+        <h2>Contact Us</h2>
+        <p><span class="fa fa-mobile-phone fa-3x"></span><br />+1(23) 456 7890</p>
+        <p><span class="fa fa-envelope-o fa-2x"></span><br />info@example.com</p>
+      </article>
+      <p id="copy">Copyright 	&copy; Example.com 2015</p>
+   </footer>
+
+  </body>
+</html>
